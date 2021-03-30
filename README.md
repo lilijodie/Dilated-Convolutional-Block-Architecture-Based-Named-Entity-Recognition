@@ -42,7 +42,7 @@ The fourth layer, __CRF layer__,  labels the tag for each character in one sente
 | train  | 46364 | 17615 | 36517 | 20571 |
 | test   | 4365  | 1973  | 2877  | 1331  |
 
-It looks like a portion of [MSRA corpus](http://sighan.cs.uchicago.edu/bakeoff2006/). You can download the dataset from the link in `./data_path/original/link.txt`
+It looks like a portion of [MSRA corpus](http://sighan.cs.uchicago.edu/bakeoff2006/). You can download the dataset from the link in `./data_path/link.txt`
 
 ### data files
 
@@ -50,7 +50,7 @@ The directory `./data_path` contains:
 
 - the preprocessed data files, `train_data` and `test_data` 
 - a vocabulary file `word2id.pkl` that maps each character to a unique id  
-- a link file `link.txt` contains the url for downloading the original dataset  
+- a link file `link.txt` contains a url for downloading the original dataset  
 
 For generating vocabulary file, please refer to the code in `data.py`. 
 
