@@ -15,7 +15,7 @@ For building __DCL+Bi-LSTM+CRF__ model (_our proposed model_), you need to annot
 
 For building __Bi-LSTM+CRF__ model, you need to annotate "self.dcba_op()" together with "self.dcl_op()" and keep other codes in "def build_graph():" remain.
 
-The above models are provided by our paper __"Named Entity Recognition Model based on Dilated Convolutional Block Architecture"(CCML 2021)__. 
+The above models are proposed by our paper __"Named Entity Recognition Model based on Dilated Convolutional Block Architecture"(CCML 2021)__. 
 
 The structure of __"Dilated Convolutional Block Architecture Based Named Entity Recognition Model"__(DCBA+Bi-LSTM+CRF) looks like the following illustration:
 
@@ -87,7 +87,7 @@ If you want to use your own dataset, please:
 
 ### test
 
-To choose the test our trained models (experiment) please refer to the directory "data_pathsave".
+To choose the test our trained models (experiment) please refer to the directory "data_path_save".
 
 `python main.py --mode=test --demo_model=dcba+bilstm+crf`
 
