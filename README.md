@@ -2,7 +2,7 @@
 
 This repository includes the code for building __Dilated Convolutional Block Architecture Based Named Entity Recognition Model__ for Chinese News Named Entity Recognition task. Its goal is to recognize three types of Named Entity: PERSON, LOCATION and ORGANIZATION.
 
-This code works on __Python 3.6.5 & TensorFlow 1.8__ and the following repository [https://github.com/Acstream/Dilated-Block-Based-Convolutional-Network,https://github.com/Determined22/zh-NER-TF) gives me much help.
+This code works on __Python 3.6.5 & TensorFlow 1.8__ and the following repository [https://github.com/Acstream/Dilated-Block-Based-Convolutional-Network)[https://github.com/Determined22/zh-NER-TF) gives me much help.
 
 For more details, please view our paper __"Named Entity Recognition Model based on Dilated Convolutional Block Architecture"(CCML 2021)__ By Yue Yuan, Yanli Wang and Kan Liu (URL: https://pan.baidu.com/s/123bgbNT1kBgA8mgwbs_nOw Extraction Code: giqv).
 
