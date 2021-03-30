@@ -96,6 +96,6 @@ Those trained models are: dcba+bilstm+crf, dcl+bilstm+crf, bilstm+crf, dcba+bils
 
 An official evaluation tool for computing metrics: [here (click 'Instructions')](http://sighan.cs.uchicago.edu/bakeoff2006/)
 
-Please do remember to install Perl on your machine before evaluation！
+__Please do remember to install Perl on your machine before evaluation!__
 
 
