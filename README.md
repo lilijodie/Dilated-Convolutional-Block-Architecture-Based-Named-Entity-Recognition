@@ -37,12 +37,7 @@ The fourth layer, __CRF layer__,  labels the tag for each character in one sente
 
 ## Dataset
 
-|    | #sentence | #PER | #LOC | #ORG |
-| :----: | :---: | :---: | :---: | :---: |
-| train  | 46364 | 17615 | 36517 | 20571 |
-| test   | 4365  | 1973  | 2877  | 1331  |
-
-It looks like a portion of [MSRA corpus](http://sighan.cs.uchicago.edu/bakeoff2006/). You can download the dataset from the link in `./data_path/link.txt`
+The dataset is a portion of [MSRA corpus](http://sighan.cs.uchicago.edu/bakeoff2006/). You can download the original dataset from the link in `./data_path/link.txt`
 
 ### data files
 
