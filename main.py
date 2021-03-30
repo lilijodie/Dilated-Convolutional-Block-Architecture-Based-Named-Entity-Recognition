@@ -22,10 +22,10 @@ parser.add_argument('--batch_size', type=int, default=64, help='#sample of each 
 parser.add_argument('--epoch', type=int, default=20, help='#epoch of training')
 parser.add_argument('--hidden_dim', type=int, default=300, help='#dim of hidden state')
 parser.add_argument('--optimizer', type=str, default='Adam', help='Adam/Adadelta/Adagrad/RMSProp/Momentum/SGD')
-parser.add_argument('--CRF', type=str2bool, default=False, help='use CRF at the top layer. if False, use Softmax')
+parser.add_argument('--CRF', type=str2bool, default=True, help='use CRF at the top layer. if False, use Softmax')
 parser.add_argument('--lr', type=float, default=0.001, help='learning rate')
 parser.add_argument('--clip', type=float, default=5.0, help='gradient clipping')
-parser.add_argument('--dropout', type=float, default=0.3, help='dropout keep_prob')
+parser.add_argument('--dropout', type=float, default=0.5, help='dropout keep_prob')
 parser.add_argument('--update_embedding', type=str2bool, default=True, help='update embedding during training')
 parser.add_argument('--pretrain_embedding', type=str, default='random', help='use pretrained char embedding or init it randomly')
 parser.add_argument('--embedding_dim', type=int, default=50, help='random init char embedding_dim')
@@ -123,26 +123,4 @@ elif args.mode == 'demo':
                 tag = model.demo_one(sess, demo_data)
                 PER, LOC, ORG = get_entity(tag, demo_sent)
                 print('PER: {}\nLOC: {}\nORG: {}'.format(PER, LOC, ORG))
-
-# elif args.mode == 'transfer_train':
-#     ckpt_file = tf.train.latest_checkpoint(model_path)
-#     print(ckpt_file)
-#     paths['model_path'] = ckpt_file
-#
-#     model = BiLSTM_CRF(args, embeddings, tag2label, word2id, paths, config=config)
-#     model.build_graph()
-#
-#     print("train data: {}".format(len(train_data)))
-#     model.train(train=train_data, dev=test_data)
-#
-# elif args.mode == 'transfer_test':
-#     ckpt_file = tf.train.latest_checkpoint(model_path)
-#     print(ckpt_file)
-#     paths['model_path'] = ckpt_file
-#
-#     model = BiLSTM_CRF(args, embeddings, tag2label, word2id, paths, config=config)
-#     model.build_graph()
-#
-#     print("test data: {}".format(test_size))
-#     model.test(test_data)
 
