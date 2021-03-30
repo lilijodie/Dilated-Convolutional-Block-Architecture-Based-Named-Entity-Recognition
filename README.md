@@ -27,7 +27,7 @@ The structure of __"Dilated Convolutional Layer Based Named Entity Recognition M
 
 For one Chinese sentence, each character in this sentence has / will have a tag which belongs to the set {O, B-PER, I-PER, B-LOC, I-LOC, B-ORG, I-ORG}.
 
-The first layer, __look-up layer__, aims at transforming each character representation from one-hot vector into *character embedding*. In this code I initialize the embedding matrix randomly. We could add some linguistic knowledge later. For example, do tokenization and use pre-trained word-level embedding, then augment character embedding with the corresponding token's word embedding. In addition, we can get the character embedding by combining low-level features (please see paper[2]'s section 4.1 and paper[3]'s section 3.3 for more details).、
+The first layer, __look-up layer__, aims at transforming each character representation from one-hot vector into *character embedding*.、
 
 The second layer, __DCBA or DCL layer__, can efficiently extract contextual features from input embeddings.
 
@@ -46,10 +46,11 @@ It looks like a portion of [MSRA corpus](http://sighan.cs.uchicago.edu/bakeoff20
 
 ### data files
 
-The directory `./Data` contains:
+The directory `./data_path` contains:
 
 - the preprocessed data files, `train_data` and `test_data` 
 - a vocabulary file `word2id.pkl` that maps each character to a unique id  
+- a link file `link.txt` contains the url for downloading the original dataset  
 
 For generating vocabulary file, please refer to the code in `data.py`. 
 
