@@ -9,11 +9,11 @@ For more details, please view our paper __"Named Entity Recognition Model based 
 ## Model
 You can build three kinds of models (including two of our proposed models) in __model.py__ just by annotating some codes in "def build_graph():" function (self.dcba_op() and self.dcl_op()):
 
-For building DCBA+Bi-LSTM+CRF model (our proposed model), you need to annotate "self.dcl_op()" and keep "self.dcba_op()" and other codes in "def build_graph():" remain.
+For building __DCBA+Bi-LSTM+CRF__ model (_our proposed model_), you need to annotate "self.dcl_op()" and keep "self.dcba_op()" and other codes in "def build_graph():" remain.
 
-For building DCL+Bi-LSTM+CRF model (our proposed model), you need to annotate "self.dcba_op()" and keep "self.dcl_op()" and other codes in "def build_graph():" remain.
+For building __DCL+Bi-LSTM+CRF__ model (_our proposed model_), you need to annotate "self.dcba_op()" and keep "self.dcl_op()" and other codes in "def build_graph():" remain.
 
-For building Bi-LSTM+CRF model, you need to annotate "self.dcba_op()" together with "self.dcl_op()" and keep other codes in "def build_graph():" remain.
+For building __Bi-LSTM+CRF__ model, you need to annotate "self.dcba_op()" together with "self.dcl_op()" and keep other codes in "def build_graph():" remain.
 
 The above models are provided by our paper __"Named Entity Recognition Model based on Dilated Convolutional Block Architecture"(CCML 2021)__. 
 
@@ -94,6 +94,8 @@ To choose the test our trained models (experiment) please refer to the directory
 Please set the parameter `--demo_model` to the model that you want to test. `dcba+bilstm+crf` is one of the models trained by me. 
 
 Those trained models are: dcba+bilstm+crf, dcl+bilstm+crf, bilstm+crf, dcba+bilstm+crf_dr_1, dcba+bilstm+crf_dr_2, dcba+bilstm+crf_dr_4, dcba+bilstm+crf_dr_8.
+
+For idcnn+crf model that mentioned in our paper, please refer to [https://github.com/kungfulei/NER_BiLSTM_IDCNN_CRF].
 
 An official evaluation tool for computing metrics: [here (click 'Instructions')](http://sighan.cs.uchicago.edu/bakeoff2006/)
 
