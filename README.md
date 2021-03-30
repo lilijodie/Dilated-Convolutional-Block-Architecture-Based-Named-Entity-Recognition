@@ -86,10 +86,14 @@ If you want to use your own dataset, please:
 
 ### test
 
-`python main.py --mode=test --demo_model=dcba_1`
+To choose the test our trained models (experiment) please refer to the directory "data_save_path".
 
-Please set the parameter `--demo_model` to the model that you want to test. `dcba_1` is the model trained by me. 
+`python main.py --mode=test --demo_model=dcba_bilstm_crf`
+
+Please set the parameter `--demo_model` to the model that you want to test. `dcba_bilstm_crf` is one of the models trained by me. 
 
 An official evaluation tool for computing metrics: [here (click 'Instructions')](http://sighan.cs.uchicago.edu/bakeoff2006/)
+
+Please do remember to install Perl on your machine before evaluation！
 
 
