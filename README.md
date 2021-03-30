@@ -93,7 +93,7 @@ To choose the test our trained models (experiment) please refer to the directory
 
 Please set the parameter `--demo_model` to the model that you want to test. `dcba+bilstm+crf` is one of the models trained by me. 
 
-Those trained models are: dcba+bilstm+crf, dcl+bilstm+crf, bilstm+crf, dcba+bilstm+crf_dr_1, dcba+bilstm+crf_dr_2, dcba+bilstm+crf_dr_4, dcba+bilstm+crf_dr_8.
+Those trained models are: dcba+bilstm+crf, dcl+bilstm+crf, bilstm+crf.
 
 For idcnn+crf model that mentioned in our paper, please refer to [https://github.com/kungfulei/NER_BiLSTM_IDCNN_CRF].
 
