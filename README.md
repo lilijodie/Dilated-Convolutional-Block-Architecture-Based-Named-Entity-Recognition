@@ -2,7 +2,7 @@
 
 This repository includes the code for building __Dilated Convolutional Block Architecture Based Named Entity Recognition Model__ for Chinese News Named Entity Recognition task. Its goal is to recognize three types of Named Entity: PERSON, LOCATION and ORGANIZATION.
 
-This code works on __Python 3.6.5 & TensorFlow 1.8__ and the following repository [https://github.com/Acstream/Dilated-Block-Based-Convolutional-Network)[https://github.com/Determined22/zh-NER-TF) gives me much help.
+This code works on __Python 3.6.5 & TensorFlow 1.8__ and the following repositories [https://github.com/Acstream/Dilated-Block-Based-Convolutional-Network] and [https://github.com/Determined22/zh-NER-TF] gives me much help.
 
 For more details, please view our paper __"Named Entity Recognition Model based on Dilated Convolutional Block Architecture"(CCML 2021)__ By Yue Yuan, Yanli Wang and Kan Liu (URL: https://pan.baidu.com/s/123bgbNT1kBgA8mgwbs_nOw Extraction Code: giqv).
 
@@ -86,11 +86,13 @@ If you want to use your own dataset, please:
 
 ### test
 
-To choose the test our trained models (experiment) please refer to the directory "data_save_path".
+To choose the test our trained models (experiment) please refer to the directory "data_pathsave".
 
-`python main.py --mode=test --demo_model=dcba_bilstm_crf`
+`python main.py --mode=test --demo_model=dcba+bilstm+crf`
 
-Please set the parameter `--demo_model` to the model that you want to test. `dcba_bilstm_crf` is one of the models trained by me. 
+Please set the parameter `--demo_model` to the model that you want to test. `dcba+bilstm+crf` is one of the models trained by me. 
+
+Those trained models are: dcba+bilstm+crf, dcl+bilstm+crf, bilstm+crf, dcba+bilstm+crf_dr_1, dcba+bilstm+crf_dr_2, dcba+bilstm+crf_dr_4, dcba+bilstm+crf_dr_8.
 
 An official evaluation tool for computing metrics: [here (click 'Instructions')](http://sighan.cs.uchicago.edu/bakeoff2006/)
 
