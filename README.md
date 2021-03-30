@@ -19,11 +19,11 @@ The above models are provided by our paper __"Named Entity Recognition Model bas
 
 The structure of __"Dilated Convolutional Block Architecture Based Named Entity Recognition Model"__(DCBA+Bi-LSTM+CRF) looks like the following illustration:
 
-![DCBA+Bi-LSTM+CRF](./pic1.pdf)
+![DCBA+Bi-LSTM+CRF](./pic1.png)
 
 The structure of __"Dilated Convolutional Layer Based Named Entity Recognition Model"__(DCL+Bi-LSTM+CRF) looks like the following illustration:
 
-![DCL+Bi-LSTM+CRF](./pic2.pdf)
+![DCL+Bi-LSTM+CRF](./pic2.png)
 
 For one Chinese sentence, each character in this sentence has / will have a tag which belongs to the set {O, B-PER, I-PER, B-LOC, I-LOC, B-ORG, I-ORG}.
 
